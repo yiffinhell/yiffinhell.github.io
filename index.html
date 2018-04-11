@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="utf-8">
+		<meta charset="UTF-8">
 		<title>Yiff in Hell!</title>
 		<link rel="icon" type="image/png" href="media/favicon16.png" sizes="16x16"/>
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
@@ -11,19 +11,6 @@
 	
 	<body>
 		<div class="container h-100">
-
-
-				<!--<div class="jumbotron h-100">
-					<div class="row">
-						<h1 class="col-12">Yiff in Hell</h1>
-					</div>
-					
-					<hr>
-					
-					<div class="row">
-						<p class="col">I make silicone toys and stuff. If I ever set up an ecommerce website, this is where I'd do it. Any announcements will be found on my social media feeds.</p>
-					</div>
-				</div>-->
 				<div class="jumbotron">
 					<div class="row">
 						<div class="col text-center">
@@ -33,16 +20,24 @@
 					<hr>
 					<div class="row">
 						<div class="offset-lg-2 col-3 col-lg-2">
-							<button class="btn btn-primary text-center btn-block">Twitter</button>
+							<a class="btn btn-light btn-block" data-toggle="tooltip" data-placement="top" title="Twitter" href="https://twitter.com/YiffInHellToys">
+							<img src="media/twitter_ico24.png">
+							</a>
 						</div>
 						<div class="col-3 col-lg-2">
-							<button class="btn btn-info btn-block">Tumblr</button>
+							<a class="btn btn-info btn-block" data-toggle="tooltip" data-placement="top" title="Tumblr" href="https://goyiff.me">
+							<img calss="text-right" src="media/tumblr_ico24.png">
+							</a>
 						</div>
 						<div class="col-3 col-lg-2">
-							<button class="btn btn-secondary btn-block">Furaffinity</button>
+							<a class="btn btn-secondary btn-block" data-toggle="tooltip" data-placement="top" title="Fur Affinity" href="https://www.furaffinity.net/user/goyiffme/">
+							<img src="media/fa_ico24.png">
+							</a>
 						</div>
 						<div class="col-3 col-lg-2">
-							<button class="btn btn-danger btn-block">Email</button>
+							<a class="btn btn-warning btn-block" data-toggle="tooltip" data-placement="top" title="inbox@yiffinhell.com" href="mailto:inbox@yiffinhell.com">
+							<img src="media/email_ico24.png">
+							</a>
 						</div>
 					</div>
 					<hr>
@@ -50,7 +45,6 @@
 						<div class="col-lg-6 offset-lg-3">
 							<div class="card">
 								<div class="card">
-									<!--<h1 class="card-header">Yiff in Hell!</h1>-->
 									<img class="card-img-top" src="media/hell.jpg">
 									<div class="card-body">
 										<h2 class="card-title">Welcome to Hell</h2>
@@ -73,5 +67,14 @@
 
 
 		</div>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+		<script>
+		$(document).ready(function(){
+			$('[data-toggle="tooltip"]').tooltip({
+			container: 'body'}); 
+		});
+		</script>
 	</body>	
 </html>
